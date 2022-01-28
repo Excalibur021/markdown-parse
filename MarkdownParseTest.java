@@ -9,8 +9,8 @@ import java.util.List;
 public class MarkdownParseTest {
     @Test
     public void testFile1() throws IOException {
-        String contents= Files.readString(Path.of("./test-file.md"));
-        List<String> expect = List.of("https://something.com", "some-page.html");
-        assertEquals(MarkdownParse.getLinks(contents), expect);
+        String contents= Files.readString(Path.of("./test-file5.md"));
+        List<String> expect = List.of();
+        assertEquals(expect, MarkdownParse.getLinks(contents));
     }
 }
