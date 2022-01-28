@@ -8,8 +8,8 @@ import java.util.List;
 
 public class MarkdownParseTest {
     @Test
-    public void testFile1() throws IOException {
-        String contents= Files.readString(Path.of("./test-file5.md"));
+    public void testFile() throws IOException {
+        String contents= Files.readString(Path.of("./test-file7.md"));
         List<String> expect = List.of();
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
