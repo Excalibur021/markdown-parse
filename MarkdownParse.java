@@ -39,7 +39,11 @@ public class MarkdownParse {
                 currentIndex = closeParen + 1;
                 continue;
             }
-            toReturn.add(markdown.substring(openParen + 1, closeParen));
+
+            String str = markdown.substring(openParen + 1, closeParen);
+            if (str.indexOf(" ") == -1) {
+                toReturn.add(str);
+            }
             currentIndex = closeParen + 1;
         }
         return toReturn;

@@ -9,7 +9,7 @@ import java.util.List;
 public class MarkdownParseTest {
     @Test
     public void testFile() throws IOException {
-        String contents= Files.readString(Path.of("./test-file7.md"));
+        String contents= Files.readString(Path.of("./test-file8.md"));
         List<String> expect = List.of();
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
