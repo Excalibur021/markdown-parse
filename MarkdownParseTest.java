@@ -56,7 +56,6 @@ public class MarkdownParseTest {
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
 
-    
     @Test
     public void testFile8() throws IOException {
         String contents= Files.readString(Path.of("./test-file8.md"));
