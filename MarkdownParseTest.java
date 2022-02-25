@@ -80,7 +80,8 @@ public class MarkdownParseTest {
     @Test
     public void testSnippet3() throws IOException {
         String contents = Files.readString(Path.of("./snippet3"));
-        List<String> expect = List.of("https://twitter.com", "https");
+        List<String> expect = List.of("https://twitter.com", 
+            "https://ucsd-cse15l-w22.github.io/", "https://cse.ucsd.edu/");
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
 }
